@@ -22,13 +22,12 @@ class BlogsController < ApplicationController
   end
 
   # POST /blogs
-  # POST /blogs.json
   def create
     @blog = Blog.new(blog_params)
 
     respond_to do |format|
       if @blog.save
-        format.html { redirect_to @blog, notice: 'Post was live.' }
+        format.html { redirect_to @blog, notice: 'Your post is now live.' }
       else
         format.html { render :new }
       end
@@ -36,7 +35,6 @@ class BlogsController < ApplicationController
   end
 
   # PATCH/PUT /blogs/1
-  # PATCH/PUT /blogs/1.json
   def update
     respond_to do |format|
       if @blog.update(blog_params)
@@ -53,6 +51,7 @@ class BlogsController < ApplicationController
     @blog.destroy
     respond_to do |format|
       format.html { redirect_to blogs_url, notice: 'Post was removed.' }
+      format.json { head :no_content }
     end
   end
 
