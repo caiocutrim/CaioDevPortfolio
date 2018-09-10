@@ -1,4 +1,7 @@
 <h1>New page to add new Portfolio</h1>
+<% if @portfolio_item.errors.any? %>
+	<%= @portfolio_item.errors.message %>
+<% end %>
 <%= form_for(@portfolio_item) do |form| %>
   <div class="field">
     <%= form.label :title %>
