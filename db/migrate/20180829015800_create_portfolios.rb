@@ -8,6 +8,6 @@ class CreatePortfolios < ActiveRecord::Migration[5.2]
       t.text :thumb_image
 
       t.timestamps
-l    end
+    end
   end
 end
