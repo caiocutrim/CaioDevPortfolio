@@ -1,6 +1,6 @@
 module CurrentUserConcern
-	extend ActiveSuppport::Concern
-	
+	extend ActiveSupport::Concern
+
 	def current_user
 		super || guest_user
 	end
