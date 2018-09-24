@@ -8,5 +8,11 @@ module ApplicationHelper
 			(link_to "Login", new_user_session_path)
 		end
 	end
+	def source_helper
+    if session[:source]
+    	gretting = "Thanks for visiting me from #{session[:source]}"
+    	content_tag(:p, gretting)
+     end
+	end
 end
 
