@@ -1,8 +1,9 @@
 class PortfoliosController < ApplicationController
-	layout 'portfolio'
+	
 	def index
 		@portfolio_items = Portfolio.all
 	end
+
 	def new
 		@portfolio_item = Portfolio.new
 		3.times { @portfolio_item.technologies.build }
@@ -22,6 +23,7 @@ class PortfoliosController < ApplicationController
 
 	def edit
 		@portfolio_item = Portfolio.find(params[:id])
+		# 3.times { @portfolio_item.technologies.build }
 	end
 
 	def update
