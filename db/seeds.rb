@@ -5,6 +5,7 @@
 		title: "Topic #{topic}"
 	)
 end
+
 10.times do |blog|
 	Blog.create!(
 		title: "My blog post #{blog}",
@@ -12,6 +13,7 @@ end
 		topic_id: Topic.last.id
 	)
 end
+
 puts	"10 blog posts created"
 5.times do |skill|
 	Skill.create!(
@@ -30,8 +32,8 @@ puts '5 skills created'
 		thumb_image:"https://via.placeholder.com/350x200",
 	)
 end
-puts '8 portfolio items created'
 
+puts '8 portfolio items created'
 8.times do |portfolio_item|
 	Portfolio.create!(
 		title: "Portfolio title #{portfolio_item}",
