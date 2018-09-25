@@ -1,9 +1,3 @@
-GIT
-  remote: https://github.com/caiocutrim/ViewTool
-  revision: 10c62024b4a2eafa614e913665cfe7814e5bca24
-  specs:
-    view_tool (0.2.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -192,6 +186,7 @@ GEM
       thread_safe (~> 0.1)
     uglifier (4.1.19)
       execjs (>= 0.3.0, < 3)
+    view_tool (0.2.0)
     warden (1.2.7)
       rack (>= 1.0)
     web-console (3.7.0)
@@ -226,7 +221,7 @@ DEPENDENCIES
   turbolinks (~> 5)
   tzinfo-data
   uglifier (>= 1.3.0)
-  view_tool!
+  view_tool (~> 0.2.0)
   web-console (>= 3.3.0)
 
 RUBY VERSION
