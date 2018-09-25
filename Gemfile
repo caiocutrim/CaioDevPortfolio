@@ -56,4 +56,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Customize url friendly
 gem 'friendly_id'
 gem 'devise'
+gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 gem 'bootstrap', '~> 4.0.0'
+gem 'view_tool', git: 'https://github.com/caiocutrim/ViewTool'
