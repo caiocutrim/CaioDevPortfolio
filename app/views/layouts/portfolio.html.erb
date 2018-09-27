@@ -15,27 +15,14 @@
   <body>
     <%= render 'shared/portfolio_nav' %>
     <main role="main">
-      <!-- start of the masterhead -->
       <%= render 'shared/portfolio_masthead' %>
-      <!-- end of the masterhead -->
-      <!-- start of the portfolio list -->
       <div class="album py-5 bg-light">
         <div class="container">
           <%= yield %>
         </div>
       </div>
       <%= source_helper %>
-      <!-- end of the portfolio list -->
+      <%= render 'shared/portfolio_footer' %>
     </main>
-
-    <footer class="text-muted">
-      <div class="container">
-        <p class="float-right">
-          <a href="#">Back to top</a>
-          <%= copyright_generator %>
-        </p>
-      </div>
-    </footer>
-
   </body>
 </html>
