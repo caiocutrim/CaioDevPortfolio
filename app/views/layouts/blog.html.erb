@@ -20,9 +20,11 @@
       <%= render 'shared/blog_nav' %>
       <% notice %>
       <!-- container of the blog post-->
+      <%= link_to('New Blog +',  new_blog_path) if logged_in?(:site_admin)  %>
       <main role="main" class="container">
         <div class="row">
           <%= yield %>
+          <%= render 'shared/blog_side' %>
         </div>
       </main>
       <!-- end of the container of the blog post -->
