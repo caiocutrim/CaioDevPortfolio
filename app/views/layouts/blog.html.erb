@@ -19,7 +19,6 @@
       <%= render 'shared/blog_header' %>
       <%= render 'shared/blog_nav' %>
       <% notice %>
-      <!-- container of the blog post-->
       <%= link_to('New Blog +',  new_blog_path) if logged_in?(:site_admin)  %>
       <main role="main" class="container">
         <div class="row">
@@ -27,10 +26,8 @@
           <%= render 'shared/blog_side' %>
         </div>
       </main>
-      <!-- end of the container of the blog post -->
+      <%= render 'shared/blog_footer' %>
     </div>
-    <!-- end of container layout -->
-
     <script>
       Holder.addTheme('thumb', {
         bg: '#55595c',
