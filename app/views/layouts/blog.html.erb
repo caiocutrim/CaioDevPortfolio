@@ -20,6 +20,7 @@
       <%= render 'shared/blog_nav' %>
       <% notice %>
       <%= link_to('New Blog +',  new_blog_path) if logged_in?(:site_admin)  %>
+      <hr>
       <main role="main" class="container">
         <div class="row">
           <%= yield %>
