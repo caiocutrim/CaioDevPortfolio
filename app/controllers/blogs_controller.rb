@@ -1,13 +1,13 @@
 class BlogsController < ApplicationController
-  before_action :set_blog, only: [:show, :edit, :update, :destroy, :toggle_status]
   layout "blog"
+  before_action :set_blog, only: [:show, :edit, :update, :destroy, :toggle_status]
   access all: [:show, :index] , 
          user: {except: [:destroy, :new, :create, :update, :edit]}, 
          site_admin: :all
   # GET /blogs
   # GET /blogs.json
   def index
-    @blogs = Blog.limit(2)
+    @blogs = Blog.all
     @page_title = "My portfolio blog"
   end
 
