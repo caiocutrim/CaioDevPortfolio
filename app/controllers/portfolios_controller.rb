@@ -2,7 +2,7 @@ class PortfoliosController < ApplicationController
   layout 'portfolio'  
 	before_action :set_portfolio_item, only: [:edit, :update, :show, :destroy]
   access all: [:show, :index] , 
-         user: {except: [:destroy, :new, :create, :update, :edit]}, 
+         user: {except: [:destroy, :new, :create, :update, :edit, :sort]}, 
          site_admin: :all
 
 	def index
