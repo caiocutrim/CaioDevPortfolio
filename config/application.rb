@@ -21,5 +21,6 @@ module DevcampPortfolio
   class Application < Rails::Application
     config.load_defaults 5.2
     config.generators.system_tests = nil
+    config.eager_load_paths << "#{Rails.root}/lib"
   end
 end
