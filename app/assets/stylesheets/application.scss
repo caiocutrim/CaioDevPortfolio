@@ -42,7 +42,7 @@ body {
 }
 
 .cover-container {
-  max-width: 42em;
+  max-width: 60em;
 }
 
 
@@ -107,6 +107,7 @@ body {
 .mastfoot {
   color: rgba(255, 255, 255, .5);
 }
+
 /*
 * Custom styles
 */
@@ -114,17 +115,19 @@ body {
 .auth-links a{
   color: #09f
 }
+
 .register-text {
  text-align: right;
 }
+
 .login {
   color: black;
   text-align: left;
 }
 
 .app-nav span{
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 #background {
@@ -144,3 +147,14 @@ body {
 .app-footer {
   color: white;
 } 
+
+.tech-news {
+  color: black;
+  margin: 20px;
+}
+.tech-news a {
+  color: green;
+}
+.tech-news > .card {
+  padding: 20px;
+}
