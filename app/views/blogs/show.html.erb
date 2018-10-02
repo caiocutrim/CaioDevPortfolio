@@ -4,5 +4,7 @@
   <%= link_to 'Back', blogs_path %>
   <p><%= @blog.body %></p>
   <%= render 'comments/comment_form' %>
-  <%= render @blog.comments %>
+  <div id="comments">
+    <%= render @blog.comments %>
+  </div>
 </div>
