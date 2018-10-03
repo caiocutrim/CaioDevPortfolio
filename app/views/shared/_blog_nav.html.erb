@@ -1,7 +1,12 @@
-<div class="nav-scroller py-1 mb-2">
-  <nav class="nav d-flex justify-content-between app-nav">
-    <%= nav_helper 'p-2 text-muted', 'span' %>
-    <span><%= login_helper 'p-2 text-muted' %></span>
-  </nav>
-</div>
-
+<nav class="navbar navbar-expand-lg navbar-light bg-faded">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <%= link_to "Caio Dev", root_path, class: 'navbar-brand' %>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <%= nav_helper 'nav-item', 'nav-link', 'li' %>
+      <%= login_helper 'nav-link'%>
+    </ul>
+  </div>
+</nav>

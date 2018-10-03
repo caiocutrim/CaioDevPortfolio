@@ -16,12 +16,11 @@
 
   <body>
     <div class="container">
-      <%= render 'shared/blog_header' %>
       <%= render 'shared/blog_nav' %>
       <% notice %>
-      <%= link_to('New Blog +',  new_blog_path) if logged_in?(:site_admin)  %>
       <hr>
       <main role="main" class="container">
+        <%= link_to fa_icon('plus') + " Add blog ",  new_blog_path if logged_in?(:site_admin)  %>
         <div class="row">
           <%= yield %>
           <%= render 'shared/blog_side' %>
