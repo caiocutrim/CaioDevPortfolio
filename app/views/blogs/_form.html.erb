@@ -12,14 +12,14 @@
     <%= form.label :topic_id %>
     <%= form.collection_select(:topic_id, Topic.all, :id, :title,
                              {
-                                selected: blog.topic.id,
+                                selected: blog.topic.nil? ? 0 : blog.topic.id, # selects the blank option if there is no blog associated with a topic
                                 include_blank: true
                              },
                              class: 'form-control'
                             ) 
     %>
   </div>
-  
+
   <div class="form-group">
     <%= form.radio_button :status, 'draft' %>
     <%= form.label :status, 'Draft' %>
