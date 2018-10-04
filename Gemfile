@@ -28,7 +28,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'friendly_id', '~> 5.2', '>= 5.2.4'
 gem 'devise', '~> 4.5'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
-gem 'bootstrap', '~> 4.0.0'
+gem 'bootstrap', '~> 4.1.2'
 gem 'view_tool', '~> 0.2.0'
 gem 'petergate', '~> 1.8', '>= 1.8.1'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.4'
