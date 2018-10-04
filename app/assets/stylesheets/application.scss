@@ -30,10 +30,12 @@ a:hover {
 
 html,
 body {
+  font-family: 'Roboto', sans-serif;
   height: 100%;
 }
 
 body {
+  font-family: 'Roboto', sans-serif;
   display: -ms-flexbox;
   display: flex;
   color: #fff;
@@ -48,6 +50,7 @@ body {
  * Header
  */
 .masthead {
+  font-family: 'Roboto', sans-serif;
   margin-bottom: 2rem;
 }
 
@@ -86,6 +89,9 @@ body {
   }
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+}
 
 /*
  * Cover
@@ -161,7 +167,10 @@ body {
   color: black;
   text-align: left;
 }
-
+.app-card-container {
+  margin-top: 55px;
+  margin-bottom: 55px;
+}
 .app-card-container > .card {
   padding: 40px;
 }
