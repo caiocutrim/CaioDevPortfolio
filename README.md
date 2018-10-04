@@ -14,7 +14,7 @@
 
 2 - And then download the dependencies by running the ```bundle install``` command that will install the gems.
 
-3 - Then you have to create the database, please make sure to be installed the postgresql database on your local machine or server, then just run the command ```rake db:load``` to load the ```db/schema.rb``` file that will create the database fastly for you.
+3 - Then you have to create the database, please make sure to be installed the postgresql database on your local machine or server, then just run the command ```rake db:load``` to load the ```db/schema.rb``` file that will create the database fastly for you. Marke sure to have the ```redis-server``` and ```redis-cli``` on your machine to work with real-time actioncable rails.
 
 4 - Last run the command ```rails server``` that will boot the puma server and then you have just access the [localhost-server-over-here](http://localhost:3000)
 
