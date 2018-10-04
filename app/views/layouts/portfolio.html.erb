@@ -18,10 +18,10 @@
       <%= render 'shared/portfolio_masthead' unless logged_in?(:site_admin) %>
       <div class="album py-5 bg-light">
         <div class="container">
+          <%= source_helper 'alert alert-warning' %>
           <%= yield %>
         </div>
       </div>
-      <%= source_helper %>
       <%= alerts %>
       <%= render 'shared/portfolio_footer' %>
     </main>

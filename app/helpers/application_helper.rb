@@ -7,14 +7,14 @@ module ApplicationHelper
       link_to "Logout", destroy_user_session_path, method: :delete, class: style
 		end
 	end
-	def source_helper
+	def source_helper styles
     if session[:source]
-    	gretting = "Thanks for visiting me from #{session[:source]}"
-    	content_tag(:p, gretting)
+    	gretting = "Thanks for visiting me from #{session[:source]}, please fell free to #{link_to 'contact me', contact_path} if you'd like to work together."
+    	content_tag(:p, gretting.html_safe, class: styles)
     end
   end
   def copyright_generator
-    @copyright = ViewTool::Renderer.copyright 'Caio Cutrim', 'All rights reserverd'
+    @copyright = ViewTool::Renderer.copyright 'Caio Cutrim', 'All rights reserved'
   end
   def nav_items
     [
