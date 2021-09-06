@@ -16,7 +16,7 @@
 
 3 - Then you have to create the database, please make sure to be installed the postgresql database on your local machine or server, then just run the command ```rake db:load``` to load the ```db/schema.rb``` file that will create the database fastly for you. Marke sure to have the ```redis-server``` and ```redis-cli``` on your machine to work with real-time actioncable rails.
 
-4 - And for lat, run the command ```rails server``` that will start the puma server and then you have only to access the [localhost-server-over-here](http://localhost:3000)
+4 - And for last, run the command ```rails server``` that will start the puma server and then you have only to access the [localhost-server-over-here](http://localhost:3000)
 
 ### About the work
 This work is part of the course in udemy that allow me to improve my rails skills, and I am very excited to share this job with the community.
